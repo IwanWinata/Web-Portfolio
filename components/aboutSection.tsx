@@ -104,11 +104,8 @@ const skillsData = [
 const AboutSection = () => {
   const { ref } = useSectionView("About", 0.75);
 
-  const getData = (
-    arr: TinfoDataArray[] | TqualificationDataArray,
-    title: string
-  ) => {
-    return arr.find((el) => el.title === title);
+  const getData = (arr: any, title: string) => {
+    return arr.find((el: any) => el.title === title);
   };
 
   return (
