@@ -2,7 +2,7 @@ import React from "react";
 import { validateString, getErrorMessage } from "@/lib/utils";
 import ContactFormEmail from "@/email/contact-form-email";
 
-let resend;
+let resend: any;
 
 // Asynchronously load and initialize Resend only when needed
 async function initializeResend() {
